@@ -1,6 +1,6 @@
 import React from "react";
 import { styled, connect } from "frontity";
-import Image from "./image.js"
+import Image from "./image"
 
 // The home page component
 const Homepage = ({ state }) => {

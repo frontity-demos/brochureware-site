@@ -2,6 +2,7 @@ import React from "react";
 import { Global, css, connect, styled, Head } from "frontity";
 import Switch from "@frontity/components/switch";
 import Header from "./header";
+import Footer from "./footer";
 import List from "./list";
 import Post from "./post";
 import Loading from "./loading";
@@ -46,6 +47,10 @@ const Theme = ({ state }) => {
           <PageError when={data.isError} />
         </Switch>
       </Main>
+
+      <FootContainer>
+        <Footer />
+      </FootContainer>
     </>
   );
 };
@@ -66,6 +71,13 @@ const globalStyles = css`
 `;
 
 const HeadContainer = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1f38c5;
+`;
+
+const FootContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;

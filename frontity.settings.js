@@ -34,9 +34,13 @@ const settings = {
               "/contact"
             ],
           ],
+          "footermenu": [
+            ["FAQ", "/faq"],
+            ["T&C", "/tandc"]
+          ],
           "featured": {
-            "showOnList": false,
-            "showOnPost": false
+            "showOnList": true,
+            "showOnPost": true
           }
         }
       }
