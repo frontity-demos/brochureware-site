@@ -11,7 +11,7 @@ const Footer = ({ state }) => {
           <ul>
           {state.theme.footermenu.map(([name, link]) => {
                 return (
-                    <li>
+                    <li key={name}>
                     <Link link={link} >
                       {name}
                     </Link>
